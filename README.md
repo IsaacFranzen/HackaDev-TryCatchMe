@@ -1,19 +1,58 @@
 # HackaDev-TryCatchMe
-----------------------------
-## Integrantes
-- Carlos Daniel Pinheiro
-- Thiago Oyo
-- Hebert Almeida Rocha
-- Alexandre Lima
-- Luciano Siqueira
-- Fabrycio Medeiros
-- Diego Rodrigues Cardoso
-- Guilherme Teixeira
-- Gustavo Fontoura
+
+Repositório do projeto Hackadev proposto no bootcamp SharpCoders, promovido pela Ímã Learning Place, e desenvolvido pelo grupo Try/Catch Me, sob a monitoria de Isaac Franzen. O objetivo da tarefa, é o desenvolvimento de uma aplicação que implemente o sistema ERP.
+
+---
+## Integrantes:
+- [Alexandre Lima](https://github.com/chandelima)
 - Bruno Medeiros Coelho
+- Carlos Daniel Pinheiro
+- [Daniela Fernandes](https://github.com/FDaniela)
+- Diego Rodrigues Cardoso
+- [Ewerthon Izidoro](https://github.com/Ewerthon-izi)
+- Fabrycio Medeiros
 - Gabriel Melo Dos Santos
-- Daniela Fernandes
-- Letícia Evelyn Farias Carregosa
+- [Guilherme Teixeira](https://github.com/Guitx0)
+- Gustavo Fontoura
+- [Gustavo Vaz Nunes](https://github.com/Gustavonuva)
+- Hebert Almeida Rocha
+- [Jackson Moraes](https://github.com/jacksontadeu)
+- [Letícia Evelyn Farias Carregosa](https://github.com/leticiaefc)
+- [Luciano Siqueira](https://github.com/LucianoDev21)
+- [Isaac Franzen](https://github.com/IsaacFranzen)
+- [Thiago Oyo](https://github.com/thiagooyo)
+
+---
+## Divisão de tarefas:
+### Regras de Negócios/Produto:
+- Diego Rodrigues
+- Gustavo Fontoura
 - Jackson Moraes
-- Ewerthon Izidoro
+- Luciano Siqueira
+- 
+### UX/Telas:
+- Guilherme Teixeira
+- Letícia Evelyn Farias Carregosa
+  
+### JS Vanilla:
+- Gustavo Fontoura
 - Gustavo Vaz Nunes
+- Isaac Franzen
+- Thiago Oyo
+
+### ReactJS:
+- Carlos Daniel Pinheiro
+- Gustavo Vaz Nunes
+- Hebert Almeida Rocha
+- Thiago Oyo
+
+### BackEnd:
+- Alexandre Lima
+- Diego Rodrigues
+- Ewerthon Izidoro
+- Jackson Moraes
+- Luciano Siqueira
+
+### CI/CD:
+- Alexandre Lima
+- Hebert Almeida Rocha
