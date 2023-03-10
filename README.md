@@ -13,9 +13,9 @@ Repositório do projeto Hackadev proposto no bootcamp SharpCoders, promovido pel
 - Fabrycio Medeiros
 - Gabriel Melo Dos Santos
 - [Guilherme Teixeira](https://github.com/Guitx0)
-- Gustavo Fontoura
+- [Gustavo Fontoura](https://github.com/gusta-fontoura)
 - [Gustavo Vaz Nunes](https://github.com/Gustavonuva)
-- Hebert Almeida Rocha
+- [Hebert Almeida Rocha](https://github.com/Hebert324)
 - [Jackson Moraes](https://github.com/jacksontadeu)
 - [Letícia Evelyn Farias Carregosa](https://github.com/leticiaefc)
 - [Luciano Siqueira](https://github.com/LucianoDev21)
