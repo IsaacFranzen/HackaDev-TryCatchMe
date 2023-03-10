@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #EEF0F2;
+}
+
+header #topo{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#btn-login{
+    
+}
+
+#busca{
+    padding-top: 10px;
+}
+
+.menu{
+    width: 100%;
+    background: #D9D9D9;
+    color: #000;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+}
+
+.menu ul { 
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li{
+    list-style: none;
+    display: block;
+    margin-left: 20px;
+}
