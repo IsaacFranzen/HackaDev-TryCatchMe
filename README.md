@@ -33,6 +33,7 @@ Repositório do projeto Hackadev proposto no bootcamp SharpCoders, promovido pel
 ### UX/Telas:
 - Guilherme Teixeira
 - Letícia Evelyn Farias Carregosa
+- Daniela Fernandes
   
 ### JS Vanilla:
 - Gustavo Fontoura
