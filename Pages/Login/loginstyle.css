@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -27,8 +27,14 @@ main.container {
     border-radius: 10px;
 }
 
-main h1{
-    margin-bottom: 2rem;
+#subtitle{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+}
+h1{
+    margin-bottom: 1.3rem;
     font-weight: bold;
 }
 
@@ -40,7 +46,7 @@ form{
     outline: 0;
     margin-top: 0.5rem;
     border-width: 2px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -54,23 +60,34 @@ form input[type="submit"] {
     border-radius: 5px;
     margin-bottom: 2rem;
 }
+form input[type="text"]{
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 1rem;
+}
 
 form .input-camp{
     margin-bottom: 1.5rem;
 }
-form #keepsave {
-    background-color: rgb(155, 155, 155);
-}
 
-main #center {
+#register {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    font-size: 0.9rem;
 }
-
-.acess {
+#register a {
+    text-decoration: none;
+}
+.remember a {
+    text-decoration: none;
+}
+.remember {
     display: flex;
     align-items: center;
     justify-content:space-between;
+    font-size: 0.9rem;
+    text-decoration: none;
 }
