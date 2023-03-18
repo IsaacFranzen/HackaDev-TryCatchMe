@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(103, 28, 163, 0.51),#330089);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;    
+}
+
+main.container {
+    background: #fff;
+    max-width: 390px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px  15px rgba(7, 5, 8, 0.51);
+    border-radius: 10px;
+}
+
+main h1{
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input-camp input{
+    outline: 0;
+    margin-top: 0.5rem;
+    border-width: 2px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background: #330089;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+form .input-camp{
+    margin-bottom: 1.5rem;
+}
+form #keepsave {
+    background-color: rgb(155, 155, 155);
+}
+
+main #center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.acess {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
