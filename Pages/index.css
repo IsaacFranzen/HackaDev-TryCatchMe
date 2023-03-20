@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.roxo{
+    color: #7920BE;;
+}
+
+#header-h1{
+    color: #7920BE;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
 #header-div{
     display: flex;
     padding-top: 50px;
