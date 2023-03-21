@@ -4,36 +4,6 @@
     box-sizing: border-box;
 }
 
-.roxo{
-    color: #7920BE;;
-}
-
-#header-h1{
-    color: #7920BE;
-    font-family: 'Open Sans';
-    font-style: normal;
-}
-#header-div{
-    display: flex;
-    padding-top: 50px;
-    margin-left: 1%;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 33px;
-}
-
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-nav a{
-    text-transform: uppercase;
-    font-size: 20px;
-    text-decoration: none;
-}
-
 #darkmode-btn{
     background-color: white;
     border:none!important;
@@ -42,35 +12,74 @@ nav a{
     background: url(../images/button-black-mode1.svg);
 }
 
-#banner-principal{
+.home-page{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.home-page{
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+nav{
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 197px;
-    margin-left: 12%;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+  
+ul{
+    display: flex;
+    gap: 48px;
+    list-style: none;
+  }
+  
+a{
+    text-decoration: none;
+    color: #1f1534;
+}
+  
+ul li a{
+    transition: all 0.3s ease;
+}
+  
+ul li a:hover {
+    opacity: 1;
+    color: #7920BE;
+    font-weight: bold;
 }
 
-#banner-id{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 49px;
-    line-height: 56px;
+.roxo{
+    color: #7920BE;
 }
 
-#banner-p{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
+.boldfont{
+    font-weight: bold;
 }
 
-#abrir-conta-btn{
+.cinza{
+    color: #7D7987;
+}
+
+.btn-criar-conta{
     color: #F9F9F9;
     width: 222px;
     height: 56px;
     background: #7920BE;
     border-radius: 4px;
-    border: none;
+    border: none
 }
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+    width: 428px;
+    margin: 40px 0;
+  }
