@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    transition: 0.3s;
+}
+
+#darkmode-btn{
+    background-color: white;
+    border:none!important;
+    width: 35px;
+    height: 35px;
+    background: url(../images/button-black-mode1.svg);
+}
+
+#darkmode-btn:hover{
+    cursor: pointer;
+}
+.home-page{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.home-page{
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+#main-h1{
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+  
+    color: #1f1534;
+  
+    width: 489px;
+}
+
+ul{
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    margin-left: 50%;
+  }
+  
+a{
+    text-decoration: none;
+    color: #1f1534;
+}
+  
+ul li a{
+    transition: all 0.3s ease;
+}
+  
+ul li a:hover {
+    cursor: pointer;
+    opacity: 1;
+    color: #7920BE;
+    font-weight: bold;
+}
+.font-pequena{
+    font-size:15px;
+}
+.roxo{
+    color: #7920BE;
+}
+
+.boldfont{
+    font-weight: bold;
+}
+
+.cinza{
+    color: #7D7987;
+}
+
+.btn-criar-conta{
+    color: #F9F9F9;
+    width: 222px;
+    height: 56px;
+    background: #7920BE;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+    width: 428px;
+    margin: 40px 0;
+}
+
+#balls{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+footer {
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 220px;
+}
+
+footer a:hover {
+    cursor: pointer;
+  }
+
+.btn-criar-conta:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    width: 244px;
+    height: 66px;
+}
