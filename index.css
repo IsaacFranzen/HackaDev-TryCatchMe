@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+header a {
+  text-decoration: none;
+}
+
+#darkmode-btn {
+  background-color: white;
+  border: none !important;
+  width: 35px;
+  height: 35px;
+  background: url(../images/button-black-mode1.svg);
+}
+
+#darkmode-btn:hover {
+  cursor: pointer;
+}
+.home-page {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans";
+  padding-top: 10%;
+  font-style: normal;
+}
+.home {
+  width: 100%;
+}
+.texto-principal {
+  display: flex;
+  justify-content: center;
+}
+#main-h1 {
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+
+  color: #1f1534;
+
+  width: 489px;
+}
+.logo {
+  font-size: 2em;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #791ebe;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+  cursor: pointer;
+  flex-direction: flex-end;
+}
+
+.navigation button {
+  margin-left: 30px;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  background: #791ebe;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: #791ebe;
+}
+
+.font-pequena {
+  font-size: 15px;
+}
+.roxo {
+  color: #7920be;
+}
+
+.boldfont {
+  font-weight: bold;
+}
+
+.cinza {
+  color: #7d7987;
+}
+
+.criar-conta {
+  color: #f9f9f9;
+  width: 222px;
+  height: 56px;
+  background: #7920be;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+  width: 428px;
+  margin: 40px 0;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 220px;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
+
+.criar-conta:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  width: 244px;
+  height: 66px;
+}
+
+.login-register {
+  font-size: 0.9em;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: #791ebe;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+.wrapper {
+  position: absolute;
+  width: 400px;
+  height: 440px;
+  background: #fff;
+  border: 1px solid #8c8686;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.2s ease;
+  z-index: 999;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.active-popup-recup {
+  transform: scale(1);
+}
+.wrapper.active-termos-servicos {
+  transform: scale(1);
+}
+.wrapper.active {
+  transform: scale(1);
+}
+
+.wrapper.active {
+  height: 520px;
+}
+.wrapper.active-termos-servicos {
+  width: 500px;
+  height: 820px;
+}
+.wrapper.active-popup-recup {
+  height: 380px;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.wrapper .form-box.termos-servico {
+  position: absolute;
+  transition: none;
+  transform: translateX(-800px);
+}
+
+.wrapper.active-termos-servicos .form-box.termos-servico {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .form-box.login {
+  /* display: none; */
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(800px);
+}
+.wrapper.active-popup-recup .form-box.login {
+  transition: none;
+  transform: translateX(600px);
+}
+.wrapper.active-termos-servicos .form-box.login {
+  transition: none;
+  transform: translateX(600px);
+}
+
+.wrapper .form-box.recupera {
+  position: absolute;
+  transition: none;
+  transform: translateX(600px);
+}
+
+.wrapper.active-popup-recup .form-box.recupera {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .form-box.cadastro {
+  position: absolute;
+  transition: none;
+  transform: translateX(-600px);
+}
+
+.wrapper.active .form-box.cadastro {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  font-size: 2em;
+  color: #791ebe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.wrapper .back-login {
+  text-decoration: none;
+}
+.wrapper .back-login-cadastro {
+  text-decoration: none;
+}
+
+.form-box h2 {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.input-camp {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-camp label {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-camp input:focus ~ label,
+.input-camp input:valid ~ label {
+  top: -8px;
+}
+
+.input-camp input {
+  width: 100%;
+  height: 100%;
+  /* background: transparent; */
+  border: 1px solid #8c8686;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-camp .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #000;
+  line-height: 57px;
+}
+
+.remenber {
+  font-size: 0.9em;
+  color: #791ebe;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remenber label input {
+  accent-color: #791ebe;
+  margin-right: 6px;
+}
+
+.remenber a {
+  color: #791ebe;
+  text-decoration: none;
+}
+.remenber a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #7920be;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #791ebede;
+}
+
+.termos {
+  color: #791ebe;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
