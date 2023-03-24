@@ -76,6 +76,11 @@ criarConta.addEventListener("click", () => {
   desfoqueHome.style.backdropFilter = "brightness(60%)";
 });
 
+criarConta.addEventListener("click", () => {
+  wrapper.classList.add("active-popup");
+  desfoqueHome.style.backdropFilter = "brightness(60%)";
+});
+
 btnDarkMode.addEventListener("click",()=>{
   if(darkModeOnFalse === false){
     divLogin.classList.add("dark-mode")
