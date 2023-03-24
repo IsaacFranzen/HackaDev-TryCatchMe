@@ -85,6 +85,7 @@ btnDarkMode.addEventListener("click",()=>{
     darkModeOnFalse = true;
   }else{
     bodyhtml.classList.remove("dark-mode");
+    divLogin.classList.remove("dark-mode")
     btnDarkMode.classList.remove("dark-mode-on");
     btnDarkMode.classList.add("dark-mode-off");
     darkModeOnFalse = false;
