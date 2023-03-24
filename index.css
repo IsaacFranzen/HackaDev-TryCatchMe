@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: "Open Sans";
 }
 
 header {
@@ -27,12 +28,20 @@ header a {
   text-decoration: none;
 }
 
-#darkmode-btn {
+.dark-mode-off {
   background-color: white;
   border: none !important;
   width: 35px;
   height: 35px;
   background: url(../images/button-black-mode1.svg);
+}
+
+.dark-mode-on {
+  background-color: #18191B;
+  border: none !important;
+  width: 35px;
+  height: 35px;
+  background: url(./images/button-white-mode2.svg);
 }
 
 #darkmode-btn:hover {
@@ -223,6 +232,7 @@ footer a:hover {
 .wrapper.active-termos-servicos {
   width: 500px;
   height: 820px;
+  font-size: 13px;
 }
 .wrapper.active-popup-recup {
   height: 380px;
@@ -403,4 +413,25 @@ footer a:hover {
 p {
   text-align: center;
   margin-top: 10px;
+}
+
+.dark-mode {
+  background-color: #18191B;
+  color: white;
+}
+
+.dark-mode #main-h1{
+  color: white;
+}
+
+.dark-mode a{
+  color: #c3c3c3;
+}
+
+.dark-mode label{
+  color: #c3c3c3;
+}
+
+.dark-mode p{
+  color: #c3c3c3;
 }

@@ -1,190 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="stylesheet" href="index.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0; login.html"
-    />
-    <title>Try-Catch Bank</title>
-  </head>
 
-  <body class="home">
-    <header>
-      <a href="#" class="logo">
-        <span class="roxo"
-          >T&C <span class="font-pequena"> &lt;BANKING&gt; </span>
-        </span>
-      </a>
-      <nav class="navigation">
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#" class="login-popup">Login</a>
-        <button id="darkmode-btn"></button>
-      </nav>
-    </header>
-    <div class="home-page">
-      <main class="texto-principal">
-        <section>
-          <h1 id="main-h1">
-            Um <span class="roxo"> Banco Online </span>feito para você!
-          </h1>
-          <p class="cinza">
-            Nosso sistema é extremamente
-            <span class="boldfont">completo </span> , permitindo que você
-            gerencie suas finanças de maneira
-            <span class="boldfont">fácil, rápida e segura.</span>
-          </p>
-          <button type="button" class="criar-conta">ABRA SUA CONTA JÁ</button>
-        </section>
-        <img
-          src="../images/people-with-money1.svg"
-          alt="mulher colocando moeda em um cofre de porco"
-        />
-        <div class="wrapper">
-          <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-          <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-              <div class="input-camp">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required />
-                <label>Email</label>
-              </div>
+<head>
+  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0; login.html" />
+  <title>Try-Catch Bank</title>
+</head>
 
-              <div class="input-camp">
-                <span class="icon">
-                  <ion-icon name="lock-closed"></ion-icon
-                ></span>
-                <input type="password" required />
-                <label>Password</label>
-              </div>
-              <div class="remenber">
-                <label><input type="checkbox" />Lembrar-me</label>
-                <a class="recupera-link" href="#">Esqueceu a senha?</a>
-              </div>
-              <button type="submit" class="btn">Login</button>
-              <div class="login-register">
-                <p>
-                  Não tem conta?
-                  <a href="#" class="cadastro-link">Registre-se aqui!</a>
-                </p>
-              </div>
-            </form>
-          </div>
-          <div class="form-box cadastro">
-            <h2>Cadastre-se</h2>
-            <form action="#">
-              <div class="input-camp">
-                <span class="icon"><ion-icon name="person"></ion-icon></span>
-                <input type="text" required />
-                <label>Nome de usuario</label>
-              </div>
-              <div class="input-camp">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required />
-                <label>Email</label>
-              </div>
-              <div class="input-camp">
-                <span class="icon">
-                  <ion-icon name="lock-closed"></ion-icon
-                ></span>
-                <input type="password" required />
-                <label>Password</label>
-              </div>
-              <div class="remenber">
-                <label
-                  ><input type="checkbox" />Li e aceito os
-                  <a href="#" class="termos termos-servico-link">Termos</a>
-                </label>
-              </div>
-              <button type="submit" class="btn">Cadastrar</button>
-              <div class="login-register">
-                <p>
-                  Já tem uma conta?
-                  <a href="#" class="login-link">Entre</a>
-                </p>
-              </div>
-            </form>
-          </div>
-          <!-- --------------------------------------------------------- -->
-          <div class="form-box recupera">
-            <h2>Recuperação de Senha</h2>
-            <p>
-              Para redefinir a senha, informa o e-mail cadastrado na sua conta e
-              lhe enviaremos um link com as instruções.
-            </p>
-            <form action="#">
-              <div class="input-camp">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required />
-                <label>Email</label>
-              </div>
-              <button type="submit" class="btn">Enviar</button>
-              <div class="login-register">
-                <a class="back-login" href="#">Voltar</a>
-              </div>
-            </form>
-          </div>
-          <div class="form-box termos-servico">
-            <h2>Termos de Uso e Serviços do T&C &lt;BANK&gt;</h2>
-            <br />
-            <span type="text">
-              <b> O T&C &lt;BANK&gt;</b> é um banco que oferece serviços
-              financeiros para seus clientes. Ao utilizar nossos serviços, você
-              concorda com os seguintes termos: <br /><br />
-              Abertura de Conta: Para abrir uma conta no
-              <b>T&C &lt;BANK&gt;</b>, você deve fornecer informações precisas e
-              atualizadas. Podemos solicitar documentos de identificação para
-              verificar suas informações. <br /><br />Serviços Financeiros:
-              <b>O T&C &lt;BANK&gt;</b> oferece serviços financeiros, incluindo
-              contas correntes, poupança, empréstimos e cartões de crédito. Os
-              serviços estão sujeitos a taxas e encargos, que serão divulgados
-              claramente antes de você utilizar o serviço. <br /><br />Uso
-              Adequado: Você concorda em usar nossos serviços apenas para fins
-              legais e adequados. Você não deve usar nossos serviços para
-              atividades ilegais ou fraudulentas. <br /><br />Segurança:
-              <b>O T&C &lt;BANK&gt;</b>
-              se compromete a proteger suas informações financeiras e
-              privacidade. Utilizamos medidas de segurança para proteger suas
-              informações e garantir que elas sejam mantidas em sigilo.
-              <br /><br />Responsabilidade: <b>O T&C &lt;BANK&gt;</b> não é
-              responsável por perdas ou danos que possam resultar do uso
-              inadequado de nossos serviços ou de informações imprecisas
-              fornecidas por você. <br /><br />Alterações nos termos:
-              <b>O T&C &lt;BANK&gt;</b> pode alterar esses termos e condições a
-              qualquer momento. As alterações serão divulgadas em nosso site e
-              você será notificado por e-mail. <br /><br />Ao utilizar os
-              serviços do <b>T&C &lt;BANK&gt;</b>, você concorda com esses
-              termos e condições. Se você tiver alguma dúvida sobre esses
-              termos, entre em contato conosco.
-            </span>
-            <div class="login-register">
-              <a class="back-login-cadastro" href="#">Voltar</a>
+<body class="home">
+  <header>
+    <a href="#" class="logo">
+      <img src="../images/logo.svg" alt="Logo do nosso banco T&C BANKING">
+    </a>
+    <nav class="navigation">
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#" class="login-popup">Login</a>
+      <button id="darkmode-btn" class="dark-mode-off"></button>
+    </nav>
+  </header>
+  <div class="home-page">
+    <main class="texto-principal">
+      <section>
+        <h1 id="main-h1">
+          Um <span class="roxo"> Banco Online </span>feito para você!
+        </h1>
+        <p class="cinza">
+          Nosso sistema é extremamente
+          <span class="boldfont">completo </span> , permitindo que você
+          gerencie suas finanças de maneira
+          <span class="boldfont">fácil, rápida e segura.</span>
+        </p>
+        <button type="button" class="criar-conta">ABRA SUA CONTA JÁ</button>
+      </section>
+      <img src="../images/people-with-money1.svg" alt="mulher colocando moeda em um cofre de porco" />
+      <div class="wrapper" id="loginPopUp">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-camp">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required />
+              <label>Email</label>
             </div>
+
+            <div class="input-camp">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remenber">
+              <label><input type="checkbox" />Lembrar-me</label>
+              <a class="recupera-link" href="#">Esqueceu a senha?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>
+                Não tem conta?
+                <a href="#" class="cadastro-link">Registre-se aqui!</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box cadastro">
+          <h2>Cadastre-se</h2>
+          <form action="#">
+            <div class="input-camp">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required />
+              <label>Nome de usuario</label>
+            </div>
+            <div class="input-camp">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-camp">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remenber">
+              <label><input type="checkbox" />Li e aceito os
+                <a href="#" class="termos termos-servico-link">Termos</a>
+              </label>
+            </div>
+            <button type="submit" class="btn">Cadastrar</button>
+            <div class="login-register">
+              <p>
+                Já tem uma conta?
+                <a href="#" class="login-link">Entre</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <!-- --------------------------------------------------------- -->
+        <div class="form-box recupera">
+          <h2>Recuperação de Senha</h2>
+          <p>
+            Para redefinir a senha, informa o e-mail cadastrado na sua conta e
+            lhe enviaremos um link com as instruções.
+          </p>
+          <form action="#">
+            <div class="input-camp">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+            <div class="login-register">
+              <a class="back-login" href="#">Voltar</a>
+            </div>
+          </form>
+        </div>
+        <div class="form-box termos-servico">
+          <h2>Termos de Uso e Serviços do T&C &lt;BANK&gt;</h2>
+          <br />
+          <span type="text">
+            <b> O T&C &lt;BANK&gt;</b> é um banco que oferece serviços
+            financeiros para seus clientes. Ao utilizar nossos serviços, você
+            concorda com os seguintes termos: <br /><br />
+            Abertura de Conta: Para abrir uma conta no
+            <b>T&C &lt;BANK&gt;</b>, você deve fornecer informações precisas e
+            atualizadas. Podemos solicitar documentos de identificação para
+            verificar suas informações. <br /><br />Serviços Financeiros:
+            <b>O T&C &lt;BANK&gt;</b> oferece serviços financeiros, incluindo
+            contas correntes, poupança, empréstimos e cartões de crédito. Os
+            serviços estão sujeitos a taxas e encargos, que serão divulgados
+            claramente antes de você utilizar o serviço. <br /><br />Uso
+            Adequado: Você concorda em usar nossos serviços apenas para fins
+            legais e adequados. Você não deve usar nossos serviços para
+            atividades ilegais ou fraudulentas. <br /><br />Segurança:
+            <b>O T&C &lt;BANK&gt;</b>
+            se compromete a proteger suas informações financeiras e
+            privacidade. Utilizamos medidas de segurança para proteger suas
+            informações e garantir que elas sejam mantidas em sigilo.
+            <br /><br />Responsabilidade: <b>O T&C &lt;BANK&gt;</b> não é
+            responsável por perdas ou danos que possam resultar do uso
+            inadequado de nossos serviços ou de informações imprecisas
+            fornecidas por você. <br /><br />Alterações nos termos:
+            <b>O T&C &lt;BANK&gt;</b> pode alterar esses termos e condições a
+            qualquer momento. As alterações serão divulgadas em nosso site e
+            você será notificado por e-mail. <br /><br />Ao utilizar os
+            serviços do <b>T&C &lt;BANK&gt;</b>, você concorda com esses
+            termos e condições. Se você tiver alguma dúvida sobre esses
+            termos, entre em contato conosco.
+          </span>
+          <div class="login-register">
+            <a class="back-login-cadastro" href="#">Voltar</a>
           </div>
         </div>
-        <img
-          id="balls"
-          src="../images/balls-decoration.svg"
-          alt="bolas decorativas"
-        />
-      </main>
-      <footer>
-        Para saber mais, <a class="roxo boldfont">fale conosco aqui!</a>
-      </footer>
-    </div>
+      </div>
+      <img id="balls" src="../images/balls-decoration.svg" alt="bolas decorativas" />
+    </main>
+    <footer>
+      Para saber mais, <a class="roxo boldfont">fale conosco aqui!</a>
+    </footer>
+  </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

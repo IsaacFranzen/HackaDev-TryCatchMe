@@ -9,6 +9,10 @@ const iconClose = document.querySelector(".icon-close");
 const backLogin = document.querySelector(".back-login");
 const backLoginCadastro = document.querySelector(".back-login-cadastro");
 const desfoqueHome = document.querySelector(".home");
+const btnDarkMode = document.querySelector("#darkmode-btn");
+const bodyhtml = document.querySelector(".home");
+const divLogin = document.querySelector("#loginPopUp");
+let darkModeOnFalse = false;
 
 cadastroLink.addEventListener("click", () => {
   wrapper.classList.add("active");
@@ -71,3 +75,18 @@ criarConta.addEventListener("click", () => {
   wrapper.classList.add("active");
   desfoqueHome.style.backdropFilter = "brightness(60%)";
 });
+
+btnDarkMode.addEventListener("click",()=>{
+  if(darkModeOnFalse === false){
+    divLogin.classList.add("dark-mode")
+    btnDarkMode.classList.remove("dark-mode-off");
+    btnDarkMode.classList.add("dark-mode-on");
+    bodyhtml.classList.add("dark-mode");
+    darkModeOnFalse = true;
+  }else{
+    bodyhtml.classList.remove("dark-mode");
+    btnDarkMode.classList.remove("dark-mode-on");
+    btnDarkMode.classList.add("dark-mode-off");
+    darkModeOnFalse = false;
+  }
+})
